@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tvBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="蓝牙设备详情"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv_deviceinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="信息"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/rl_title"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvDeviceUUIDHint"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/line"
+        android:gravity="center_vertical"
+        android:minWidth="80dp"
+        android:paddingLeft="10dp"
+        android:text="Server UUID：" />
+
+    <TextView
+        android:id="@+id/tvDeviceUUID"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/tvDeviceUUIDHint"
+        android:layout_below="@id/line"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="10dp"
+        tools:text="adadasdfasdfasdfasdfasdfasdfadsfadsfadfad"/>
+
+    <TextView
+        android:id="@+id/tvSendContentHint"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvDeviceUUIDHint"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="发送：" />
+
+    <TextView
+        android:id="@+id/tvSendContent"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/tvSendContentHint"
+        android:layout_below="@id/tvDeviceUUIDHint"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="10dp"
+        tools:text="niahoadad"/>
+
+    <TextView
+        android:id="@+id/tvReceiveContentHint"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvSendContentHint"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="接收：" />
+
+    <TextView
+        android:id="@+id/tvReceiveContent"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/tvReceiveContentHint"
+        android:layout_below="@id/tvSendContentHint"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:paddingLeft="10dp"
+        tools:text="niahoadad"/>
+
+    <Button
+        android:id="@+id/bt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvReceiveContentHint"
+        android:text="连 接" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/bt_write_data"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="发送"/>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/bt_write_data"
+            android:layout_marginRight="5dp"
+            android:hint="输入内容"
+            android:background="#10D81B60"/>
+    </RelativeLayout>
+
+</RelativeLayout>
