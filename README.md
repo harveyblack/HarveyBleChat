@@ -1,7 +1,7 @@
 # HarveyBleChat
-Android BLE 文字聊天
+Android BLE文字聊天
 
-基于Android 系统开发的BLE文字聊天Demo
+基于Android BLE GATT协议开发的文字聊天Demo
 <br>
 <br>
 一. 蓝牙列表主页的效果图
